@@ -122,13 +122,22 @@
 }
 
 
-
 /* all similar styling code  */
 
 section{
     padding: 100px 0; 
- }
-
+}
+.about, .services , .skills{
+    font-family: 'Poppins', sans-serif;
+}
+.about .about-content,
+.services .serv-content,
+.skills .skills-content{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
 section .title{
     position: relative;
     text-align: center;
@@ -158,21 +167,15 @@ section .title::after{
     background: #fff;
     transform: translateX(-50%);
 }
+
+
 /* ABOUT SECTION STYLING */
 
-.about, .services{
-    font-family: 'Poppins', sans-serif;
-}
+
 .about .title::after{
     content: "quien soy";
 }
-.about .about-content,
-.services .serv-content{
-    display:flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
+
 .about .about-content .left{
     width:  45%;
 }
@@ -190,8 +193,8 @@ section .title::after{
     font-weight: 600;
     margin-bottom: 10px;
 }
-.about .about-content .right .text .span{
-    color: crimson
+.about .about-content .right .text span{
+    color: crimson;
 }
 .about .about-content .right p{
     text-align: justify;
@@ -224,7 +227,7 @@ section .title::after{
 }
 .services .title::after{
     background: #111;
-    content: "que ofrezco";
+    content: "te ofrezco";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -244,19 +247,48 @@ section .title::after{
 .services .serv-content .card:hover .box{
     transform: scale(1.05);
 }
-.services .serv-content .card i{
+.services .serv-content .card .box svg{
     font-size: 50px;
     color: crimson;
     transition: color 0.3s ease;
 }
-.services .serv-content .card:hover i{
-    background: #fff;
+.services .serv-content .card:hover .box svg{
+    color: #fff;
 }
 .services .serv-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7 px 0;
 }
+
+
+
+/* SKILLS SECTION STYLING */
+
+.skills .title::after{
+    content: "conocimientos"
+}
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+.skills .skills-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+
 
 
 
