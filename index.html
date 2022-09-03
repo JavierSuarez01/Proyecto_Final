@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js" integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 </head>
 <body>
     <nav class="navbar">
@@ -22,7 +25,7 @@
                 <li><a href="#">Contacto</a></li>
             </ul>
             <div class="menu-btn">
-                <i class="fas fa-bars"></i>
+                <!-- <i class="fas fa-bars"></i> -->
             </div>
         </div>
     </nav>
@@ -147,7 +150,7 @@
     <section class="teams" id="teams">
         <div class="max-width">
             <h2 class="title">Mi equipo</h2>
-            <div class="carousel">
+            <div class="carousel owl-carousel">
                 <div class="card">
                     <div class="box">
                         <img src="portfolio-images/profile-1.jpeg" alt="">
@@ -185,10 +188,64 @@
                 </div>
             </div>
         </div>
-
-
     </section>
 
-    
+    <!-- contact section start -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Información</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Ponte en Contacto</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem facere animi voluptas laboriosam, quae deleniti itaque dolore nemo pariatur provident?</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Nombre</div>
+                                <div class="sub-title">Francisco Javier Suarez Rincón</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div class="info">
+                                <div class="head">Direccion</div>
+                                <div class="sub-title">Calle 56# 4w - 23 piso 3 <br> Bucaramanga, Santander</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">fjsr1098@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Escribeme</div>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Nombre" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Correo" required>
+                            </div>
+                        </div>    
+                        <div class="field">
+                            <input type="text" placeholder="Asunto" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Descripción..." required></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
