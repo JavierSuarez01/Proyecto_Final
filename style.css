@@ -439,10 +439,10 @@ section .title::after{
     font-size: 25px;
     color: crimson;
 }
-.contact .contact-content .row .info .head{
+.contact .contact-content .info .head{
     font-weight: 500;
 }
-.contact .contact-content .row .info .sub-title{
+.contact .contact-content .info .sub-title{
     color:#333;
 }
 .contact .right form .fields{
@@ -456,12 +456,13 @@ section .title::after{
 }
 .contact .right form .textarea{
     height:80px ;
+    width: 100%;
 }
 .contact .right form .name{
     margin-right: 10px ;
 }
 .contact .right form .email{
-    margin-right: 10px ;
+    margin-left: 10px ;
 }
 .contact .right form .field .input{
     height: 100%;
