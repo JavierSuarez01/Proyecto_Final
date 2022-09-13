@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="sp">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,21 +8,25 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js" integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 </head>
 <body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+            <div class="logo"><a href="#">Portafo<span>lio.</span></a></div>
             <ul class="menu">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Acerca de mi</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Habilidades</a></li>
-                <li><a href="#">Equipo</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#home" class="${movil}">Inicio</a></li>
+                <li><a href="#about" class="${movil}">Acerca de mi</a></li>
+                <li><a href="#services" class="${movil}">Servicios</a></li>
+                <li><a href="#skills" class="${movil}">Habilidades</a></li>
+                <li><a href="#teams" class="${movil}">Equipo</a></li>
+                <li><a href="#contact" class="${movil}">Contacto</a></li>
             </ul>
             <div class="menu-btn">
                 <!-- <i class="fas fa-bars"></i> -->
@@ -37,7 +41,7 @@
             <div class="home-content">
                 <div class="text-1">Hola, Mi nombre es</div>
                 <div class="text-2">Javier Suarez</div>
-                <div class="text-3">Soy <span>Desarrollador Web</span></div>
+                <div class="text-3">Soy <span class="typing"></span></div>
                 <a href="#">Contáctame</a>
             </div>
         </div>
@@ -53,7 +57,7 @@
                     <img src="portfolio-images/profile-1.jpeg" alt="">
                 </div>
                 <div class="column right">
-                    <div class="text">Bienvenido soy Javier Suarez, <span>Desarrollador WEB</span></div>
+                    <div class="text">Bienvenido soy Javier Suarez, <span class="typing-2"></span></div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab officiis unde quo, perspiciatis deserunt doloribus repellendus rem! Repellendus, voluptatem! Cumque quae quasi nisi velit. Molestias cum consectetur consequuntur commodi aspernatur.</p>
                     <a href="#">Descarga mi HV</a>
                 </div>
@@ -94,7 +98,7 @@
 
     <!-- SKILLS SECCTION START -->
 
-    <section class="skills" id="skilss">
+    <section class="skills" id="skills">
         <div class="max-width">
             <h2 class="title">Mis Habilidades</h2>
             <div class="skills-content">
@@ -107,35 +111,35 @@
                     <div class="bars">
                         <div class="info">
                             <span>HTML</span>
-                            <span>50%</span>
+                            <span>30%</span>
                         </div>
                         <div class="line html"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
                             <span>CSS</span>
-                            <span>50%</span>
+                            <span>30%</span>
                         </div>
                         <div class="line css"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
                             <span>JavaScript</span>
-                            <span>50%</span>
+                            <span>30%</span>
                         </div>
                         <div class="line js"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
                             <span>PHP</span>
-                            <span>50%</span>
+                            <span>30%</span>
                         </div>
                         <div class="line php"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
                             <span>MySQl</span>
-                            <span>50%</span>
+                            <span>70%</span>
                         </div>
                         <div class="line mysql"></div>
                     </div>
@@ -248,7 +252,7 @@
         </div>
     </section>
     
-    <!-- footer  -->
+    <!-- footer section start -->
     <footer>
         <span>Created By <a href=""">JavierSuarez</a> | <span class="far fa-copyright"></span> 2022 All rights reserved.</span>
     </footer>

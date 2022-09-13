@@ -6,6 +6,7 @@ $(document).ready(function () {
         } else {
             $('.navbar').removeClass("sticky");
         }
+
         // scroll-up button show/hide script
         if(this.scrollY > 500){
             $('.scroll-up-btn').addClass("show");
@@ -17,9 +18,25 @@ $(document).ready(function () {
      // slide-up script
      $('.scroll-up-btn').click(function(){
         $('html').animate({scrollTop: 0});
-        // removing smooth scroll on slide-up button click
-        $('html').css("scrollBehavior", "auto");
     });
+
+    // TYPING ANIMATION SCRIPT
+
+    var typed = new Typed(".typing",{
+        strings: ["Diseñador Web","Tester de Software","Freelance"],
+        typeSpeed: 100,
+        backSpeed:60,
+        loop: true,
+    });
+
+    var typed = new Typed(".typing-2",{
+        strings: ["Diseñador Web","Tester de Software","Freelance"],
+        typeSpeed: 100,
+        backSpeed:60,
+        loop: true,
+    });
+
+
 
     $('.navbar .menu li a').click(function(){
         // applying again smooth scroll on menu items click
